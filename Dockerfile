@@ -56,14 +56,20 @@ RUN pip install --ignore-installed --upgrade \
 RUN rm /bin/sh && \
     mv /tmp/shnew /bin/sh
 
-RUN pip install keras
+RUN pip install keras && \
+    pip install -U kaggle-cli
 RUN conda install -c conda-forge bcolz
+RUN yes | conda install pandas
+RUN yes | conda install -c conda-forge tqdm
+RUN pip install --upgrade dask
 
 
 RUN bash -c '. activate python2 && \
     pip install --upgrade tensorflow && \
     pip install keras && \
     pip install -U bcolz && \
+    pip install -U kaggle-cli && \
+    y | conda install pandas && \
     . deactivate'
 
 
