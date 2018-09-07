@@ -1,1 +1,1 @@
-All files related to the course will be here. This includes notebooks and docker setup files.
+All files related to the course will be here. This includes notebooks and docker setup files. Detailed instructions are available in the wiki page at https://github.com/osu-msban-ai/Deep-Learning-Course-Files/wiki
