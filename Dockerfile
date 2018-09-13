@@ -51,7 +51,7 @@ RUN mv /bin/sh /tmp/shnew && \
 RUN yes | conda create -n tensorflow
 RUN source activate tensorflow
 RUN pip install --ignore-installed --upgrade \
-    https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.3.0-cp36-cp36m-linux_x86_64.whl
+    https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.10.0-cp36-cp36m-linux_x86_64.whl
 
 RUN rm /bin/sh && \
     mv /tmp/shnew /bin/sh
